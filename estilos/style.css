@@ -112,6 +112,8 @@ nav ul li a {
 
 a:hover {
     color: white;
+    
+    transition: all .2s  ease-out;
 
 }
 
@@ -125,7 +127,8 @@ a:hover {
         position: absolute;
         background: var(--celeste);
         margin-left: -120%;
-
+        
+        transition: all .3s  ease-out;
     }
 
     nav ul li {
@@ -366,7 +369,8 @@ iframe {
     padding: 20px;
     border: 1px solid grey;
     border-radius: 5%;
-    background: rgba(73, 80, 82, 0.3)
+    background-color: rgba(73, 80, 82, 0.3)
+    
 }
 
 .seccionProducto h3 {
@@ -511,4 +515,24 @@ iframe {
         width: 400px;
     }
 }
+
+.seccionProducto:hover{
+    background-color: rgba(73, 80, 82, 0.78);
+    transition: all .4s  ease-out;
+   
+}
+.imgProductos:hover {
+    transform: scale(1.2);
+    transition: all .4s  ease-out;
+    
+}
+.seccionProducto:hover h3{
+    display: none;
+}
+.seccionProducto:hover a{
+    padding-top: 30px;
+}
+
+
+
 
