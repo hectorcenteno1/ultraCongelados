@@ -1,27 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>contacto</title>
 </head>
+
 <body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-secondary text-white">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="logoMasTitulo"><img src="../img/logo.png" alt="">
+                        <h1>Ultrancongelados</h1>
+                    </div>
+                </a>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center nav-center">
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./contacto.html">Concacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success bg-light" type="submit bg-dark">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <header class="headerIndex">
-
+    <!-- <header class="headerIndex">
 
         <div class="logoMasTitulo">
             <img class="logo" src="../img/logo.png" alt="logo">
             <h1>Ultracongelados</h1>
         </div>
-        
+
         <nav class="navegador">
 
             <input type="checkbox" id="btnMenu">
             <label for="btnMenu"> <img id="imgMenuNav" src="../img/menuNav.png" alt="">
-            </label>  
+            </label>
 
             <ul class="menuNav">
                 <li>
@@ -35,84 +82,97 @@
                 <li>
                     <a href="productos.html">Productos</a>
                 </li>
-            
+
                 <li>
                     <a href="noticias.html">Noticias</a>
                 </li>
-                          
+
                 <li>
                     <a href="contacto.html">Contacto</a>
                 </li>
-            
-            </ul>  
-            
+
+            </ul>
+
         </nav>
 
-        <input class= "cajaBuscar" type="search" id="search" placeholder="BUSCAR" />
+        <input class="cajaBuscar" type="search" id="search" placeholder="BUSCAR" />
 
-    </header>
+    </header> -->
 
-    <main>
-        <section>
-            <h1>CONTACTO</h1>
-        </section>
-        <!-- formulario de contacto -->
-        <section>
-            <article>
-                <form action="#">
-                    <input type="text" placeholder="Ingrese su Nombre">
-                    <input type="text" placeholder="Ingrese su Apellido">
-                    <label for="email">Decime tu email:
-                        <input type="email" placeholder="aaa@gmail.com"  name="email"><br>
-                    </label>
-                    <label for="Observaciones"> Observaciones:<br>
-                        <textarea placeholder="Observaciones"></textarea>
-                    </label> <br>
-                    <input type="number" placeholder="DECIME TU EDAD"><br>
-                    <div><p>Elegí un lado:</p>
-                        <div>Izquierda
-                            <input type="radio" name="lado" value="izquierda">
-                        </div>
-                        <div>Derecha
-                            <input type="radio" name="lado" value="derecha">
-                        </div>
+    <main class="maincontacto d-flex flex-column  align-items-center">
+
+        <h2 class="fst-normal fs-2 text-decoration-underline mt-4 mb-4 titleContac">Contacto</h2>
+
+        <div class="d-lg-flex flex-row w-100 ">
+            <div class="  w-50 ms-2 border border-dark rounded bg-dark bg-opacity-10 rounded-end mb-4 formContac">
+                <div  >
+                    <h3 class="fw-bold fs-3 tex-uppercase text-decoration-underline ms-2">Donde encontrarnos</h3>
+                    <address class=" fw-semibold fs-5 ms-3">. Avenida Virgen del Valle Norte 1181 </address>
+                    <address class="fw-semibold fs-5 fs-xs-7 ms-3">. Avenida Virgen del Valle Norte 104 </address>
+                    <address class="fw-semibold fs-5 ms-3">. Avenida Presidente Castillo 2830 </address>
+                    <address class="fw-semibold fs-5 ms-3">. Avenida Alem 150 </address>
+                
+                </div>
+                <div >
+                    <h3 class="fw-bold fs-3 tex-uppercase text-decoration-underline ms-2"> Email </h3>
+                    <address class="fw-semibold fs-6 ms-3 " >Ultracongeladosdel@gmail.com </address>
+                </div>
+
+                <div class="w-75">
+                    <h3 class="fw-bold fs-3 tex-uppercase text-decoration-underline ms-2">Envianos tu CV</h3>
+                    <address class="fw-semibold fs-6 ms-3" >RescusosHumanos@Ultracongelados.com </address>
+                </div>
+                
+            </div>
+            <div  class="w-50 p-4 m-4  border border-dark rounded  bg-dark bg-opacity-10">
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="">
                     </div>
-                    <p>Que letra te gusta mas?</p>
-                    <select name="letra" id="letra"> 
-                        <option value="x">x</option>
-                        <option value="y">Y</option>
-                        <option value="z">Z</option>
-                    </select>
-                    <div>Queres recibir info sobre nosotros?
-                    <input type="checkbox" name="acepta" value="1"></div>
-                    <input type="submit" value="PASAME LA DATA">
-                    <input type="reset" value="RESETEAR">
-                </form>
-            </article>
-        </section>
-    </main>
-    <footer>
-
-        <div class="copy">
-            <img class="iconFooter" src="../img/copyright.png" alt="copyright">
-        </div>
-        <div class="datos">
-            <address>Virgen del Valle Norte 1181 - Catamarca - Argentina</address>
-            <address>UltracongeladosdelNoaSRL@gmail.com</address>
-            <a href="">Terminos y Condiciones</a>
-            <address>Tel: 383 - 456789</address>
-            <address>Año 2022</address>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary bg-dark  mb-3 d-flex justify-content-end">Contactanos </button>
+                </div>
+            </div>
         </div>
         
+    </main>
+    <footer class="box-sizing-none ">
+
+        <div class="iconoCopy">
+            <img class="iconFooter" src="../img/copyright.png" alt="copyright">
+        </div>
+
+        <div class="datos">
+            <address class="mb-0 text-lowercase">Virgen del Valle Norte 1181 - Catamarca - Argentina</address>
+            <address class="mb-0 text-lowercase">UltracongeladosdelNoaSRL@gmail.com</address>
+            <a class="mb-0 text-lowercase tex-decoration-none tex-dark" href="">Terminos y Condiciones</a>
+            <address class="mb-0 text-lowercase">Tel: 383 - 456789</address>
+            <address class="mb-0 text-lowercase">Año 2022</address>
+        </div>
 
         <div class="redes">
-            <img class="iconFooter" src="../img/facebook.png" alt="facebook">
+            <img id="iconosFooter" class="iconFooter" src="../img/facebook.png" alt="facebook">
 
             <img class="iconFooter" src="../img/instagram.png" alt="instagram">
         </div>
-        
-
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
