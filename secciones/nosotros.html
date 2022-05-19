@@ -5,53 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>nosotros</title>
 </head>
 
 <body>
 
-    <header class="headerIndex">
-
-
-        <div class="logoMasTitulo">
-            <img class="logo" src="../img/logo.png" alt="logo">
-            <h1>Ultracongelados</h1>
-        </div>
-
-        <nav class="navegador">
-
-            <input type="checkbox" id="btnMenu">
-            <label for="btnMenu"> <img id="imgMenuNav" src="../img/menuNav.png" alt="">
-            </label>
-
-            <ul class="menuNav">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-
-                <li>
-                    <a href="noticias.html">Noticias</a>
-                </li>
-
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-
-            </ul>
-
+    <header>
+        <nav class="navbar navbar-expand-md bg-secondary text-white">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand"  href="#"> <div class="logoMasTitulo"><img  src="../img/logo.png" alt=""> <h1>Ultrancongelados</h1></div></a>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center nav-center">
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="./noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="./contacto.html">Concacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" >
+                        <button class="btn btn-outline-success bg-light" type="submit bg-dark">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-
-        <input class="cajaBuscar" type="search" id="search" placeholder="BUSCAR" />
-
     </header>
     <main class="mainIndex">
         <h2> Nosotros </h2>
@@ -98,26 +93,31 @@
         </div>
     </main>
 
-    <footer class="footerIndex">
+    <footer class="box-sizing-none">
 
-        <div class="copy">
+        <div class="iconoCopy">
             <img class="iconFooter" src="../img/copyright.png" alt="copyright">
         </div>
+
         <div class="datos">
-            <address>Virgen del Valle Norte 1181 - Catamarca - Argentina</address>
-            <address>UltracongeladosdelNoaSRL@gmail.com</address>
-            <a href="">Terminos y Condiciones</a>
-            <address>Tel: 383 - 456789</address>
-            <address>Año 2022</address>
+            <address class="mb-0 text-lowercase">Virgen del Valle Norte 1181 - Catamarca - Argentina</address>
+            <address class="mb-0 text-lowercase">UltracongeladosdelNoaSRL@gmail.com</address>
+            <a class="mb-0 text-lowercase tex-decoration-none tex-dark" href="">Terminos y Condiciones</a>
+            <address class="mb-0 text-lowercase">Tel: 383 - 456789</address>
+            <address class="mb-0 text-lowercase">Año 2022</address>
         </div>
 
         <div class="redes">
-            <img class="iconFooter" src="../img/facebook.png" alt="facebook">
+            <img id="iconosFooter" class="iconFooter" src="../img/facebook.png" alt="facebook">
 
             <img class="iconFooter" src="../img/instagram.png" alt="instagram">
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
     <title>Ultracongelados</title>
 </head>
@@ -14,48 +16,50 @@
 <body>
 
     <!-- encabezado -->
-    <header class="headerIndex">
+    <header>
 
-            <div  class="logoMasTitulo">
-                <img class="logo" src="./img/logo.png" alt="logo">
-                <h1>Ultracongelados</h1>
+        <nav class="navbar navbar-expand-md bg-secondary text-white">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="logoMasTitulo"><img src="./img/logo.png" alt="">
+                        <h1>Ultrancongelados</h1>
+                    </div>
+                </a>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center nav-center mr-4">
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./secciones/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./secciones/noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./secciones/contacto.html">Concacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success bg-light" type="submit bg-dark">Buscar</button>
+                    </form>
+                </div>
             </div>
-
-            <nav  class="navegador">
-
-                <input type="checkbox" id="btnMenu">
-                <label for="btnMenu"> <img id="imgMenuNav" src="./img/menuNav.png" alt="">
-                </label>
-
-                <ul class="menuNav">
-
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-
-                    <li>
-                        <a href="./secciones/nosotros.html">Nosotros</a>
-                    </li>
-
-                    <li>
-                        <a href="./secciones/productos.html">Productos</a>
-                    </li>
-
-                    <li>
-                        <a href="./secciones/noticias.html">Noticias</a>
-                    </li>
-
-                    <li>
-                        <a href="./secciones/contacto.html">Contacto</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-        
-
-        <input  class="cajaBuscar" type="search" id="search" placeholder="BUSCAR" />
-
+        </nav>
     </header>
 
     <!-- seccion principal de la pagina -->
@@ -65,7 +69,6 @@
         <section class="imgPrincipaIndex">
 
             <img class="imgPrincipal" src="./img/distribuidora de productos congelados.jpg" alt="frutas congeladas">
-
 
         </section>
 
@@ -120,84 +123,81 @@
 
         </section>
 
-        <section class="noticiasIndex"> 
-
-            <div class="noticia pilar">
-
-                <iframe class="iframeIndex" src="https://www.youtube.com/embed/plC9WbIMJCk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <h3>Falta de mano de obra para cosechas</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, 
-                    doloribus nobis tenetur est, dolor nihil id mollitia obcaecati dolores 
-                    architecto aspernatur alias animi veniam? Perspiciatis totam delectus 
-                    sequi nesciunt ipsam!
-                </p>
-                <a href="./secciones/noticias.html">Ver Mas </a>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
-
-            <div class="noticia pilar" >
-                
-                <img class="imgPilar" src="./img/conceptoCongelados.jpg" alt="">
-
-                <h3>Nuevo concepto de congelación de alimentos mejora calidad </h3>
-
-                <p>
-                    Cambiar a un nuevo método de congelación de alimentos podría generar 
-                    alimentos congelados más seguros y de mejor calidad, al tiempo que ahorra energía y 
-                    reduce las emisiones de carbono, según un nuevo estudio del Servicio de Investigación 
-                    Agrícola del Departamento de Agricultura de EE. UU. (ARS)) 
-                    y científicos de la Universidad de California-Berkeley.
-                </p>
-                <a href="./secciones/noticias.html">Ver Mas </a>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/conceptoCongelados.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <a class="btn btn-light " href="./secciones/noticias.html" role="button">Ver Mas</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <iframe class="iframeIndex" src="https://www.youtube.com/embed/plC9WbIMJCk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                        <a class="btn btn-light " href="./secciones/noticias.html" role="button">Ver Mas</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <iframe class="iframeIndex" src="https://www.youtube.com/embed/plC9WbIMJCk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="carousel-caption d-none d-md-block">
+                        <a class="btn btn-light " href="./secciones/noticias.html" role="button">Ver Mas</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="noticia pilar">
-
-                <iframe class="iframeIndex" src="https://www.youtube.com/embed/plC9WbIMJCk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <h3>Inflacion afecta productos congelados</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Magnam vitae id atque quaerat necessitatibus voluptatibus 
-                    esse veniam fuga labore, repudiandae quod inventore optio quidem!
-                     Voluptas molestiae adipisci 
-                    fugiat dolores odit.
-                </p>
-                <a href="./secciones/noticias.html">Ver Mas </a>
-            </div>
-
-        </section>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
     <!-- pie de pagina -->
 
-    <footer>
+    <footer class="box-sizing-none">
 
-        <div class="copy">
+        <div class="iconoCopy">
             <img class="iconFooter" src="./img/copyright.png" alt="copyright">
         </div>
 
         <div class="datos">
-            <address>Virgen del Valle Norte 1181 - Catamarca - Argentina</address>
-            <address>UltracongeladosdelNoaSRL@gmail.com</address>
-            <a href="">Terminos y Condiciones</a>
-            <address>Tel: 383 - 456789</address>
-            <address>Año 2022</address>
+            <address class="mb-0 text-lowercase">Virgen del Valle Norte 1181 - Catamarca - Argentina</address>
+            <address class="mb-0 text-lowercase">UltracongeladosdelNoaSRL@gmail.com</address>
+            <a class="mb-0 text-lowercase tex-decoration-none tex-dark" href="">Terminos y Condiciones</a>
+            <address class="mb-0 text-lowercase">Tel: 383 - 456789</address>
+            <address class="mb-0 text-lowercase">Año 2022</address>
         </div>
 
         <div class="redes">
-            <img class="iconFooter" src="./img/facebook.png" alt="facebook">
+            <img id="iconosFooter" class="iconFooter" src="./img/facebook.png" alt="facebook">
 
             <img class="iconFooter" src="./img/instagram.png" alt="instagram">
         </div>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
