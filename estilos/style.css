@@ -70,10 +70,11 @@
 
 /*  Main */
 main {
-    height: auto;
+    height: 100%;
     background-image: url(../img/backbody.jpg);
     background-repeat: no-repeat;
     background-size: auto;
+
     
 }
 
@@ -325,7 +326,7 @@ iframe {
     text-transform: uppercase;
     border-bottom: 1px solid;
     font-weight: bold;
-    width: 200px;
+    
 }
 
 .nuestraHistoria p {
@@ -424,6 +425,15 @@ iframe {
 
 .formContac{
     padding-bottom: 65px;
+}
+
+/*html Noticias*/
+
+@media (min-width:991px){
+   .pNoticias{
+    width: 75%; 
+   }
+    
 }
 
 /*  Footer */
