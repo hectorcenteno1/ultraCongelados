@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/* paleta de colores */
+:root {
+  --gris: #cad2c5;
+  --verdeclaro: #84a98c;
+  --verde: #52796f;
+  --verdeoscuro: #354f52;
+  --azuloscuro: #2f3e46;
+  --celeste: #caf0f8;
+}
+
+/* reset no tener problemas entre navegadores  */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.bodyindex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*     HEADER  */
+.headerIndex {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--celeste);
+  top: 0;
+}
+
+.logoMasTitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70px;
+  width: 70px;
+  margin: 0 20px 10px 20px;
+}
+
+.logoMasTitulo h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: medium;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: var(--celeste);
+}
+
+.nav-center {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#imgMenuNav {
+  height: 25px;
+  width: 25px;
+}
+
+.nav-center a {
+  font-size: 0, 5cm;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*  Main */
+main {
+  height: 100%;
+  background-image: url(../img/backbody.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.imgPrincipal {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.subTitulos {
+  text-align: center;
+  margin: 0;
+  padding: 10px 25px;
+  border-top: 5px solid var(--azuloscuro);
+}
+
+.subTitulos p {
+  font-size: 20px;
+}
+
+.nuestrosPilares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px;
+}
+
+.nuestrosPilares h3 {
+  margin-top: 15px;
+}
+
+.nuestrosPilares p {
+  padding: 20px 60px 10px 60px;
+}
+
+.pilar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.imgPilar {
+  width: 300px;
+  height: 200px;
+}
+
+.carousel-inner img {
+  height: 400px;
+  width: 700px;
+}
+
+.carousel-inner iframe {
+  height: 400px;
+  width: 700px;
+}
+
+.carousel-caption a {
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+}
+
+.carousel-caption a:hover {
+  color: var(--gris);
+}
+
+@media (min-width: 1024px) {
+  .nuestrosPilares {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .noticiasIndex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.redes img {
+  padding-left: 10px;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+.imgProductos {
+  height: 200px;
+  width: 250px;
+  border-radius: 5%;
+}
+
+.noticia a {
+  text-decoration: none;
+  color: var(--verdeoscuro);
+  font-size: 0, 5cm;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.noticia a:hover {
+  color: white;
+}
+
+/*  main productos  */
+.grillabody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+.headerIndex {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+}
+
+.mainIndex {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
+.footerProductos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+.mainIndex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainIndex h2 {
+  color: var(--azuloscuro);
+  padding: 5px;
+  font-size: 35px;
+  border-bottom: 2px solid;
+  margin: 20px 0 50px 0;
+}
+
+.galeriagrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.seccionProducto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 30px 30px 30px;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5%;
+  background-color: rgba(73, 80, 82, 0.3);
+}
+
+.seccionProducto h3 {
+  font-size: 25px;
+  margin: 10px 20px;
+}
+
+.seccionProducto a {
+  text-decoration: none;
+  color: var(--verdeoscuro);
+  font-size: 0, 5cm;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.seccionProducto a:hover {
+  color: white;
+}
+
+/* Productos */
+@media (max-width: 1063px) {
+  .galeriagrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 711px) {
+  .galeriagrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .seccionProducto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 15px 15px 15px 15px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 5%;
+    background: rgba(73, 80, 82, 0.3);
+  }
+  .seccionProducto h3 {
+    font-size: 15px;
+    margin: 5px 10px;
+  }
+  .imgProductos {
+    height: 100px;
+    width: 125px;
+    border-radius: 5%;
+  }
+  .seccionProducto a {
+    text-decoration: none;
+    color: var(--verdeoscuro);
+    font-size: 0, 2cm;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+  }
+}
+
+/*NOSOTROS*/
+.nuestraHistoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
+.nuestraHistoria h3 {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  font-weight: bold;
+}
+
+.nuestraHistoria p {
+  margin: 50px 40px 0 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.nuestraHistoria img {
+  margin-top: 60px;
+  height: 250px;
+  width: 350px;
+  border-radius: 10%;
+}
+
+.textoHistoria {
+  margin-left: 20px;
+}
+
+.objetivos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+.objetivos h3 {
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  font-weight: bold;
+  width: 110px;
+  margin-top: 25px;
+}
+
+.objetivos p {
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+.objetivos img {
+  height: 500px;
+  width: 800px;
+}
+
+@media (max-width: 860px) {
+  .nuestraHistoria {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nuestraHistoria img {
+    margin-top: 30px;
+  }
+  .objetivos img {
+    height: 250px;
+    width: 400px;
+  }
+}
+
+.seccionProducto:hover {
+  background-color: rgba(73, 80, 82, 0.78);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.imgProductos:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.seccionProducto:hover h3 {
+  display: none;
+}
+
+.seccionProducto:hover a {
+  padding-top: 30px;
+}
+
+/* Html Contacto */
+.maincontacto {
+  height: auto;
+  background-image: url(../img/backbody.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.titleContac {
+  padding-bottom: 70px;
+}
+
+.d-flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formContac {
+  padding-bottom: 65px;
+}
+
+/*html Noticias*/
+@media (min-width: 991px) {
+  .pNoticias {
+    width: 75%;
+  }
+}
+
+/*  Footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+address {
+  margin-bottom: none;
+}
+
+.datos {
+  text-align: center;
+  font-size: large;
+  margin: none;
+}
+
+.datos address {
+  font-size: 13px;
+}
+
+.datos a {
+  font-size: 13px;
+}
+
+.iconFooter {
+  height: 30px;
+  width: 40px;
+}
+
+.iconoCopy {
+  margin: 30px 0 30px 30px;
+}
+
+.redes {
+  margin: 30px 30px 30px 0;
+}
+/*# sourceMappingURL=estilos.css.map */
