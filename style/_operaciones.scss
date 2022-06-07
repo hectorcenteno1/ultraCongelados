@@ -1,0 +1,30 @@
+/*mapas*/
+
+$redes:(
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: #C25E30,
+    copyright: black,
+);
+@each $red, $imagen in $redes {
+    .fa-#{$red}{
+        color: $imagen;
+        
+    }
+};
+
+.redSocial{
+    font-size:1.8rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fa-brands{
+    @extend.redSocial;
+
+}
+.fa-solid{
+    @extend.redSocial;
+}
+

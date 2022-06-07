@@ -1,6 +1,7 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import "generales";
+@import "operaciones";
 
 
 /* paleta de colores */
@@ -24,6 +25,11 @@
     display: flex;
 
 }
+@mixin sizes($width, $height)
+{
+    height: $height;
+    width: $width;
+}
 
 /*     HEADER  */
 .headerIndex {
@@ -37,8 +43,7 @@
 .logoMasTitulo {
     display: flex;
     flex-direction: column;
-    height: 70px;
-    width: 70px;
+    @include sizes(70px,70px);
     margin: 0 20px 10px 20px;
 
     h1 {
@@ -56,10 +61,7 @@
     padding-right: 5%;
 }
 
-#imgMenuNav {
-    height: 25px;
-    width: 25px;
-}
+
 
 .nav-center a {
 
@@ -73,11 +75,7 @@
 /*  Main */
 main {
     height: 100%;
-    background-image: $fondoMenu;
-    background-repeat: no-repeat;
-    background-size: auto;
-
-
+    background-color: $fondoMenu;
 }
 
 .imgPrincipal {
@@ -235,6 +233,8 @@ iframe {
     }
 }
 
+/*
+
 .galeriagrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -272,6 +272,8 @@ iframe {
 }
 
 /* Productos */
+/*
+
 @media (max-width:1063px) {
     .galeriagrid {
         display: grid;
@@ -321,6 +323,8 @@ iframe {
 
 
 }
+*/
+
 
 /*NOSOTROS*/
 
@@ -374,8 +378,7 @@ iframe {
     }
 
     img{
-        height: 500px;
-    width: 800px;
+        @include sizes(800px,700px);     
     }
 }
 
@@ -392,11 +395,12 @@ iframe {
     }
 
     .objetivos img {
-        height: 250px;
-        width: 400px;
+
+        @include sizes(400px,250px);
+        
     }
 }
-
+/*
 .seccionProducto:hover {
     background-color: rgba(73, 80, 82, 0.78);
     transition: all .4s ease-out;
@@ -415,13 +419,13 @@ iframe {
 
 .seccionProducto:hover a {
     padding-top: 30px;
-}
+}*/
 
 /* Html Contacto */
 
 .maincontacto {
     height: auto;
-    background-image: url(../img/backbody.jpg);
+    background-color: $fondoMenu;
     background-repeat: no-repeat;
     background-size: auto;
 
@@ -454,38 +458,31 @@ footer {
     justify-content: space-between;
     margin-bottom: 0;
 
-    a{
-        text-decoration:none;
-    }
-}
-
-address {
-    margin-bottom: none;
-}
-
-.datos {
-    text-align: center;
-    font-size: large;
-    margin: none;
     
-    address{
-        font-size: 13px;
+    address {
+        margin-bottom: none;
     }
-    a{
-        font-size: 13px;
+    
+    .datos {
+        text-align: center;
+        font-size: large;
+        margin: none;
+        
+        address{
+            font-size: 13px;
+        }
+        a{
+            font-size: 13px;
+            text-decoration: none;
+        }
+    }
+    
+    .iconoCopy {
+        margin: 30px 0 30px 30px;
+    }
+    
+    .redes {
+        margin: 30px 30px 30px 0;
     }
 }
 
-.iconFooter {
-    height: 30px;
-    width: 40px;
-
-}
-
-.iconoCopy {
-    margin: 30px 0 30px 30px;
-}
-
-.redes {
-    margin: 30px 30px 30px 0;
-}

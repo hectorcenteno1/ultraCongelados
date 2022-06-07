@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
+    <script src="https://kit.fontawesome.com/a9bc042095.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Nuestros productos congelados listos para ser entregados a nuestros distribuidores y clientes ">
     <title>productos</title>
 </head>
 
@@ -21,27 +23,36 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand"  href="#"> <div class="logoMasTitulo"><img  src="../img/logo.png" alt=""> <h1>Ultrancongelados</h1></div></a>
+                <a class="navbar-brand" href="#">
+                    <div class="logoMasTitulo"><img src="../img/logo.png" alt="">
+                        <h1>Ultrancongelados</h1>
+                    </div>
+                </a>
                 <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center nav-center">
                         <li class="nav-item">
-                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="./productos.html">Productos</a>
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="./noticias.html">Noticias</a>
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./noticias.html">Noticias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active d-flex p-2 text-white" aria-current="page" href="./contacto.html">Contacto</a>
+                            <a class="nav-link active d-flex p-2 text-white" aria-current="page"
+                                href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" >
+                        <input class="form-control me-2" type="search" placeholder="Search">
                         <button class="btn btn-outline-success bg-light" type="submit bg-dark">Buscar</button>
                     </form>
                 </div>
@@ -56,119 +67,465 @@
 
             <h2 class="subtituloProductos"> Nuestros Productos</h2>
 
-            <section class="galeriagrid">
+            <section id="tarjetas" class="row g-5 m-0">
 
-                <div class="seccionProducto">
-                    
-                    <img class="imgProductos " src="../img/arandanos.jpg" alt="">
-                    <h3>Arandanos</h3>
-                    <a href="">Ver Mas</a>
-                
-                </div>
+                <article id="arandanos" class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
+                    <div class="card text-center bg-light text-dark h-100">
+                        <h3 class="card-header">Arandanos</h3>
+                        <img src="../img/arandanos.jpg" alt="arandanos" data-bs-toggle="modal"
+                            data-bs-target="#modalArandano" class="d-block img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">Arandanos Congelados</p>
+                            <p class="card-text">Empaquetado en Bolsas de 1 Kg.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info btn-md">Ver Mas</a>
+                        </div>
+                    </div>
+                </article>
 
+                <article id="brocoli" class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
+                    <div class="card text-center bg-light text-dark h-100">
+                        <h3 class="card-header">Brocoli</h3>
+                        <img src="../img/brocoli.jpg" alt="brocoli" data-bs-toggle="modal"
+                            data-bs-target="#modalBrocoli" class="d-block img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">Brocoli Congelados</p>
+                            <p class="card-text">Empaquetado en Bolsas de 2,5 Kg.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info btn-md">Ver Mas</a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/brocoli.jpg" alt="">
-                    <h3>Brocoli</h3>
-                    <a href="">Ver Mas</a>
-                </div>
+                <article id="chauchas" class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
+                    <div class="card text-center bg-light text-dark h-100">
+                        <h3 class="card-header">Chauchas</h3>
+                        <img src="../img/chauchas.jpg" alt="chauchas" data-bs-toggle="modal"
+                            data-bs-target="#modalChauchas" class="d-block img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">Chauchas Congelados</p>
+                            <p class="card-text">Empaquetado en Bolsas de 2 Kg.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info btn-md">Ver Mas</a>
+                        </div>
+                    </div>
 
+                </article>
 
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/chauchas.jpg" alt="">
-                    <h3>Chaucas</h3>
-                    <a href="">Ver Mas</a>
-                </div>
+                <article id="espinacas" class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
+                    <div class="card text-center bg-light text-dark h-100">
+                        <h3 class="card-header">Espinacas</h3>
+                        <img src="../img/espinacas.jpg" alt="espinacas" data-bs-toggle="modal"
+                            data-bs-target="#modalEspinacas" class="d-block img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">Espinacas Congelados</p>
+                            <p class="card-text">Empaquetado en Bolsas de 2,5 Kg.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info btn-md">Ver Mas</a>
+                        </div>
+                    </div>
 
+                </article>
 
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/espinacas.jpg" alt="">
-                    <h3>Espinacas</h3>
-                    <a href="">Ver Mas</a>
-                </div>
+                <article id="frambuesas" class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
+                    <div class="card text-center bg-light text-dark h-100">
+                        <h3 class="card-header">Frambuesas</h3>
+                        <img src="../img/frambuesas.jpg" alt="frambuesas" data-bs-toggle="modal"
+                            data-bs-target="#modalFrambuesas" class="d-block img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">Frambuesas Congelados</p>
+                            <p class="card-text">Empaquetado en Bolsas de 5 Kg.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info btn-md">Ver Mas</a>
+                        </div>
+                    </div>
 
+                </article>
 
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/frambuesas.jpg" alt="">
-                    <h3>Frambuesas</h3>
-                    <a href="">Ver Mas</a>
-                </div>
+                <article id="pimientos" class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
+                    <div class="card text-center bg-light text-dark h-100">
+                        <h3 class="card-header">Pimientos</h3>
+                        <img src="../img/pimientos.jpg" alt="pimientos" data-bs-toggle="modal"
+                            data-bs-target="#modalPimientos" class="d-block img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">Pimientos Congelados</p>
+                            <p class="card-text">Empaquetado en Bolsas de 1,5 Kg.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info btn-md">Ver Mas</a>
+                        </div>
+                    </div>
 
+                </article>
 
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/pimientos.jpg" alt="">
-                    <h3>Pimientos</h3>
-                    <a href="">Ver Mas</a>
-                </div>
+                <article id="guacamole" class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
+                    <div class="card text-center bg-light text-dark h-100">
+                        <h3 class="card-header">Guacamole</h3>
+                        <img src="../img/guacamole.jpg" alt="guacamole" data-bs-toggle="modal"
+                            data-bs-target="#modalGuacamole" class="d-block img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">Guacamole Congelado</p>
+                            <p class="card-text">Empaquetado en Bolsas de 0,5 Kg.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info btn-md">Ver Mas</a>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/guacamole.jpg" alt="">
-                    <h3>Guacamole</h3>
-                    <a href="">Ver Mas</a>
-                </div>
-
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/hamburguesasdepescado.jpg" alt="">
-                    <h3>Hamburguesas de Pesacado</h3>
-                    <a href="">Ver Mas</a>
-                </div>
-
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/medialunas.jpg" alt="">
-                    <h3>Medialunas</h3>
-                    <a href="">Ver Mas</a>
-                </div>
-
-
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/pizza.jpg" alt="">
-                    <h3>Pizza</h3>
-                    <a href="">Ver Mas</a>
-                </div>
-
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/rabas.jpg" alt="">
-                    <h3>Rabas</h3>
-                    <a href="">Ver Mas</a>
-                </div>
-
-                <div class="seccionProducto">
-                    <img class="imgProductos" src="../img/arosdecebolla.avif" alt="">
-                    <h3>Aros de Cebolla</h3>
-                    <a href="">Ver Mas</a>
-                </div>
-
+                <article id="hamburguesasdepescado" class="col-sm-12 col-md-6 col-lg-4 col-xxl-4">
+                    <div class="card text-center bg-light text-dark h-100">
+                        <h3 class="card-header">Hamburguesas de Pescado</h3>
+                        <img src="../img/hamburguesasdepescado.jpg" alt="hamburguesasdepescado" data-bs-toggle="modal"
+                            data-bs-target="#modalHamburguesasdePescado" class="d-block img-fluid">
+                        <div class="card-body">
+                            <p class="card-text">Hamburguesas de Pescado</p>
+                            <p class="card-text">Empaquetado en Cajas de 5 Kg.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info btn-md">Ver Mas</a>
+                        </div>
+                    </div>
+                </article>
             </section>
 
+
+            <section id="modales">
+
+                <article id="modalArandano" class="modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselArandano" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/arandanos.jpg" alt="arandanos" class="d-block img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/arandanos2.jpg" alt="arandanos2" class="d-block img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselArandano" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselArandano" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="modalBrocoli" class="modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselBrocoli" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/brocoli.jpg" alt="brocoli" class="d-block img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/brocoli2.jpg" alt="brocoli2" class="d-block img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselBrocoli" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselBrocoli" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="modalChauchas" class="modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselChauchas" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/chauchas.jpg" alt="chauchas" class="d-block img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/chauchas2.jpg" alt="chauchas2" class="d-block img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselChauchas" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselChauchas" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="modalEspinacas" class="modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselEspinacas" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/espinacas.jpg" alt="espinacas" class="d-block img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/espinacas2.jpg" alt="espinacas2" class="d-block img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselEspinacas" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselEspinacas" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="modalFrambuesas" class="modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselFrambuesas" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/frambuesas.jpg" alt="frambuesas" class="d-block img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/frambuesas2.jpg" alt="frambuesas2" class="d-block img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselFrambuesas" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselFrambuesas" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="modalPimientos" class="modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselPimientos" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/pimientos.jpg" alt="pimientos" class="d-block img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/pimientos2.jpg" alt="pimientos2" class="d-block img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselPimientos" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselPimientos" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="modalGuacamole" class="modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselGuacamole" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/guacamole.jpg" alt="guacamole" class="d-block img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/guacamole2.jpg " alt="guacamole2" class="d-block img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselGuacamole" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselGuacamole" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article> 
+
+                <article id="modalHamburguesasdePescado" class="modal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="carouselHamburguesadePescado" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/hamburguesasdepescado.jpg" alt="hamburguesasdepescado" class="d-block img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/hamburguesasdepescado2.jpg" alt="hamburguesasdepescado2" class="d-block img-fluid">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselHamburguesadePescado" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselHamburguesadePescado" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- 
+
+            <div class="seccionProducto">
+                <img class="imgProductos" src="../img/medialunas.jpg" alt="">
+                <h3>Medialunas</h3>
+                <a href="">Ver Mas</a>
+            </div>
+
+
+            <div class="seccionProducto">
+                <img class="imgProductos" src="../img/pizza.jpg" alt="">
+                <h3>Pizza</h3>
+                <a href="">Ver Mas</a>
+            </div>
+
+            <div class="seccionProducto">
+                <img class="imgProductos" src="../img/rabas.jpg" alt="">
+                <h3>Rabas</h3>
+                <a href="">Ver Mas</a>
+            </div>
+
+            <div class="seccionProducto">
+                <img class="imgProductos" src="../img/arosdecebolla.avif" alt="">
+                <h3>Aros de Cebolla</h3>
+                <a href="">Ver Mas</a>
+            </div>
+            -->
         </main>
+
+        
         <footer class="footerProductos box-sizing-none bg-secondary">
 
-            <div class="iconoCopy">
-                <img class="iconFooter" src="../img/copyright.png" alt="copyright">
-            </div>
-    
-            <div class="datos">
-                <address class="mb-0 text-lowercase">Virgen del Valle Norte 1181 - Catamarca - Argentina</address>
-                <address class="mb-0 text-lowercase">UltracongeladosdelNoaSRL@gmail.com</address>
-                <a class="mb-0 text-lowercase tex-decoration-none tex-dark" href="">Terminos y Condiciones</a>
-                <address class="mb-0 text-lowercase">Tel: 383 - 456789</address>
-                <address class="mb-0 text-lowercase">Año 2022</address>
-            </div>
-    
-            <div class="redes">
-                <img id="iconosFooter" class="iconFooter" src="../img/facebook.png" alt="facebook">
-    
-                <img class="iconFooter" src="../img/instagram.png" alt="instagram">
-            </div>
-    
+            
+        <div class="iconoCopy">
+            <i class="fa-solid fa-copyright"></i>
+        </div>
+
+        <div class="datos">
+            <address class="mb-0 ">Virgen del Valle Norte 1181 - Catamarca - Argentina</address>
+            <address class="mb-0 ">UltracongeladosdelNoaSRL@gmail.com</address>
+            <a class="mb-0 text-dark" href="">Terminos y Condiciones</a>
+        </div>
+
+        <div class="redes">         
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
         </footer>
-        
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
