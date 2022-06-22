@@ -4,7 +4,7 @@
 @import "operaciones";
 
 
-/* paleta de colores */
+
 :root {
     --gris: #cad2c5;
     --verdeclaro: #84a98c;
@@ -31,7 +31,7 @@
     width: $width;
 }
 
-/*     HEADER  */
+
 .headerIndex {
     height: 90px;
     display: flex;
@@ -72,7 +72,7 @@
 
 }
 
-/*  Main */
+
 main {
     height: 100%;
     background-color: $fondoMenu;
@@ -195,8 +195,6 @@ iframe {
 
 }
 
-/*  main productos  */
-
 .grillabody {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -232,101 +230,6 @@ iframe {
         margin: 20px 0 50px 0;
     }
 }
-
-/*
-
-.galeriagrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
-
-.seccionProducto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 30px 30px 30px;
-    padding: 20px;
-    border: 1px solid grey;
-    border-radius: 5%;
-    background-color: rgba(73, 80, 82, 0.3);
-
-    h3{
-        font-size: 25px;
-        margin: 10px 20px;
-    }
-
-    a{
-        text-decoration: none;
-        color: var(--verdeoscuro);
-        font-size: 0, 5cm;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: bold;
-    }
-}
-
-
-.seccionProducto a:hover {
-    color: white;
-
-}
-
-/* Productos */
-/*
-
-@media (max-width:1063px) {
-    .galeriagrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
-}
-
-@media (max-width:711px) {
-
-    .galeriagrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    .seccionProducto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 15px 15px 15px 15px;
-        padding: 10px;
-        border: 1px solid grey;
-        border-radius: 5%;
-        background: rgba(73, 80, 82, 0.3)
-    }
-
-    .seccionProducto h3 {
-        font-size: 15px;
-        margin: 5px 10px;
-    }
-
-    .imgProductos {
-        height: 100px;
-        width: 125px;
-        border-radius: 5%;
-    }
-
-    .seccionProducto a {
-        text-decoration: none;
-        color: var(--verdeoscuro);
-        font-size: 0, 2cm;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: bold;
-
-    }
-
-
-}
-*/
-
-
-/*NOSOTROS*/
 
 .nuestraHistoria {
     display: flex;
@@ -400,28 +303,6 @@ iframe {
         
     }
 }
-/*
-.seccionProducto:hover {
-    background-color: rgba(73, 80, 82, 0.78);
-    transition: all .4s ease-out;
-
-}
-
-.imgProductos:hover {
-    transform: scale(1.2);
-    transition: all .4s ease-out;
-
-}
-
-.seccionProducto:hover h3 {
-    display: none;
-}
-
-.seccionProducto:hover a {
-    padding-top: 30px;
-}*/
-
-/* Html Contacto */
 
 .maincontacto {
     height: auto;
@@ -443,7 +324,7 @@ iframe {
     padding-bottom: 65px;
 }
 
-/*html Noticias*/
+
 
 @media (min-width:991px) {
     .pNoticias {
@@ -452,7 +333,7 @@ iframe {
 
 }
 
-/*  Footer */
+
 footer {
     display: flex;
     justify-content: space-between;
